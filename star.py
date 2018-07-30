@@ -3,7 +3,15 @@
 
 i = 0
 star = 1
-numberOfLines = int(input("How many lines should the star use? "))
+
+while True:
+    numberOfLines = int(input("How many lines should the star use? "))
+    
+    if numberOfLines < 3:
+        print("Star height must be at least 3 lines...")
+    else:
+        break
+
 space = numberOfLines // 2
 
 while i < (numberOfLines + 1):
